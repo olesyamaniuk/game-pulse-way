@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Comfortaa:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 :root {
 }
@@ -10,8 +10,8 @@
 
 html {
   scroll-behavior: smooth;
-  background: #ffffff;
-  color: #000;
+  background: rgba(255, 244, 226, 1);
+  color: rgba(29, 28, 28, 1);
 }
 
 body {
@@ -298,13 +298,13 @@ a {
 
 .home {
   width: 375px;
-  height: 748px;
+  height: 874px;
 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/image/home/main\ Section.png");
-  padding: 237px 20px 0px;
+  background-image: url("/img/home/hero\ page\ mobile.png");
+  padding: 62px 20px 0px;
   margin: auto;
 }
 .home__wrapper {
@@ -316,191 +316,104 @@ a {
 }
 
 .home-title {
-  font-family: Climate Crisis;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 48px;
+  font-family: Montserrat;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 51.2px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  text-transform: uppercase;
-  color: #ffffff;
+
+  color: rgba(255, 76, 74, 1);
 }
 .home-text {
-  font-family: Climate Crisis;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 26px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #ffffff;
-  padding: 12px 0 52px;
-}
-.home-text-two {
-  color: #ffffff;
-  font-family: Comfortaa;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 26px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
-.home-container-button {
-  display: flex;
-  flex-direction: column;
-  gap: 17px;
-  padding-top: 30px;
-}
-.home-button {
-  font-family: Comfortaa;
-  font-size: 14px;
+  font-family: Open Sans;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 38.13px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  text-transform: uppercase;
+
+  padding: 28px 0 42px;
+}
+
+.home-button {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21.79px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
   color: #ffffff;
   background: #0bab03;
-  width: 234px;
-  height: 59px;
+  width: 290px;
+  height: 70px;
   border: none;
   border-radius: 20px;
 }
-.home-button-two {
-  background: #0b7e05;
-}
+
 @media screen and (min-width: 1200px) {
   .home {
     width: 1440px;
-    height: 734px;
-    background-image: url("/image/home/Main\ Section\ \(1\).png");
-    padding: 248px 227px 0px;
+    height: 820px;
+
+    background-image: url("/img/home/Hero\ page.png");
+    padding: 160px 576px 0px 80px;
     margin: auto;
   }
   .home__wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-  .home__wrapper-two {
+    align-items: start;
+    justify-content: start;
   }
 
   .home-title {
-    font-family: Climate Crisis;
-    font-size: 48px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: right;
+    font-family: Montserrat;
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 75.58px;
+    text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
   .home-text {
-    font-family: Climate Crisis;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 26px;
-    text-align: right;
+    font-family: Open Sans;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38.13px;
+    text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 
-    padding: 22px 0 76px;
-  }
-  .home-text-two {
-    font-family: Comfortaa;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 26px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    width: 569px;
-  }
-  .home-container-button {
-    display: flex;
-    flex-direction: row;
-    gap: 31px;
-    padding-top: 57px;
-  }
-  .home-button {
-    font-family: Comfortaa;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 26px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    text-transform: uppercase;
-    color: #ffffff;
-    background: #0bab03;
-    width: 234px;
-    height: 59px;
-    border: none;
-    border-radius: 20px;
-  }
-  .home-button-two {
-    background: #0b7e05;
+    padding: 36px 0 62px;
   }
 }
 
 .about {
-  padding: 40px 16px;
+  padding: 80px 20px 40px;
   width: 375px;
   margin: auto;
 }
 .about-title {
-  font-family: Comfortaa;
-  font-size: 30px;
+  font-family: Montserrat;
+  font-size: 42px;
   font-weight: 700;
-  line-height: 57.6px;
+  line-height: 51.2px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  text-transform: uppercase;
-}
-.about-text {
-  font-family: Comfortaa;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-
-  padding: 15px 0 22px;
-}
-
-.feature-list {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  gap: 28px;
-}
-
-.feature {
-  width: 262px;
-
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  align-items: start;
-  font-family: Comfortaa;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+  color: rgba(255, 76, 74, 1);
 }
 .about-img {
   overflow: hidden;
   position: relative;
   width: 375px;
-  height: 230px;
-  margin-left: -16px;
-  margin-top: 44px;
+  height: 207.21px;
+  margin-left: -20px;
+  margin-top: 28px;
 }
 .about-img img {
   object-fit: cover;
@@ -508,169 +421,172 @@ a {
   width: 100%;
   height: 100%;
 }
+.about-text {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  padding: 19px 0 28px;
+}
+.about-text-two {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24.51px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(255, 76, 74, 1);
+}
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 28px;
+  padding-top: 22px;
+}
+
+.feature {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  align-items: start;
+
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.51px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
 @media screen and (min-width: 1200px) {
   .about {
-    padding: 28px 16px;
+    padding: 120px 80px 60px;
     width: 1440px;
     margin: auto;
-    display: flex;
-    gap: 86px;
   }
   .about-title {
-    font-family: Comfortaa;
-    font-size: 48px;
+    font-family: Montserrat;
+    font-size: 42px;
     font-weight: 700;
-    line-height: 57.6px;
+    line-height: 51.2px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
+  .about-container-bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 141px;
+    padding-top: 32px;
+  }
+  .about-img {
+    width: 640px;
+    height: 354px;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+
   .about-text {
-    font-family: Comfortaa;
-    font-size: 20px;
+    font-family: Open Sans;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 27px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    width: 598px;
+    width: 499px;
 
-    padding: 31px 0 48px;
+    padding: 0px 0 18px;
   }
 
   .feature-list {
     display: flex;
-    flex-direction: row;
-    align-items: start;
-    width: 636px;
-
-    gap: 40px;
-    flex-wrap: wrap;
-  }
-
-  .feature {
-    width: 298px;
-
-    display: flex;
     flex-direction: column;
-    gap: 24px;
     align-items: start;
+    gap: 28px;
+    padding-top: 22px;
   }
-  .about-img {
-    overflow: hidden;
-    border: 13px solid #ffffff;
-    width: 706px;
-    height: 680px;
-
-    margin-left: 0px;
-    margin-right: -16px;
-    margin-top: -100px;
-  }
-  .about-img img {
-    object-fit: cover;
-    object-position: center;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.gallery-button-container {
-  display: flex;
-  align-items: end;
-  justify-content: end;
-  margin-right: 16px;
-}
-
-.gallery-button {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  -webkit-transition: scale 0.3s ease;
-  transition: scale 0.3s ease;
-}
-
-.gallery-button:hover {
-  scale: 120%;
 }
 
 .gallery {
   margin: auto;
-  padding: 64px 0px 64px 16px;
+  padding: 40px 20px;
   width: 375px;
 }
 
 .gallery-title-text {
-  font-family: Comfortaa;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 26px;
+  font-family: Open Sans;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 29.96px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  margin: 0;
-  padding: 0;
+  padding-top: 28px;
 }
-.gallery-container-text {
-  padding-top: 30px;
-  padding-bottom: 34px;
-  font-family: Comfortaa;
-  font-size: 20px;
+.gallery-title-button-top {
+  display: none;
+}
+.gallery-item-title {
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 26.82px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding: 18px 0 12px;
+  color: rgba(109, 4, 220, 1);
+}
+.gallery-item-text {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.51px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.gallery-item-text-bold {
+  font-family: Open Sans;
+  font-size: 18px;
   font-weight: 700;
-  line-height: 26px;
-  text-align: left;
-  text-transform: uppercase;
+  line-height: 24.51px;
+  text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
 .gallery__list {
+  margin: 42px 0 32px;
 }
-
+.gallery-img {
+  overflow: hidden;
+  position: relative;
+  width: 295px;
+  height: 171px;
+}
+.gallery-img img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
 .gallery__item {
-  width: 339px;
-  height: 84px;
+  width: 335px;
+  height: 396px;
+  padding: 20px;
 
-  border-radius: 50px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/image/gallery/1.png");
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 1);
+}
 
-  margin: 0 10px;
-  font-family: Climate Crisis;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 26px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  text-transform: uppercase;
-  padding-top: 29px;
-  color: #ffffff;
-}
-.gallery__item-two {
-  background-image: url("/image/gallery/Rectangle\ 25.png");
-}
-.gallery__item-three {
-  background-image: url("/image/gallery/3.png");
-}
-.gallery__item-four {
-  background-image: url("/image/gallery/4.png");
-}
-.gallery__item-five {
-  background-image: url("/image/gallery/1\ \(1\).png");
-}
-.gallery__item-six {
-  background-image: url("/image/gallery/2.png");
-}
-.gallery__item-seven {
-  background-image: url("/image/gallery/3\ \(1\).png");
-}
-.gallery__item-eight {
-  background-image: url("/image/gallery/4\ \(1\).png");
-}
-.gallery__item-nine {
-  display: none;
-}
 @media screen and (min-width: 1200px) {
   .gallery {
     margin: auto;
@@ -716,339 +632,274 @@ a {
 }
 .blog {
   margin: auto;
-  padding: 64px 16px;
+  padding: 40px 20px;
   width: 375px;
-  height: 1386px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/image/blog/Tadım\ ve\ Atölyeler.png");
-}
-.blog-title-text {
-  font-family: Comfortaa;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 26px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-
-  padding: 12px 0 35px;
-}
-.blog-img {
-  margin: auto;
 }
 
-.blog__list {
+.blog-img-one {
+  width: 375px;
+  height: 381px;
+  margin: 28px 0 22px;
+  margin-left: -20px;
+}
+
+.faq-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 32px;
-  margin-top: 38px;
+  gap: 8px;
+  width: 335px;
 }
 
-.blog-item {
-  width: 328px;
-  height: 307px;
-  border-radius: 50px;
-  background: #ffffff;
+.faq-item {
+  padding: 14px 12px 14px 12px;
+  border-radius: 16px;
+  border: 1px solid rgba(109, 4, 220, 1);
+}
 
-  padding: 54px 20px 11px;
-}
-.blog-item-title {
-  font-family: Climate Crisis;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  text-transform: uppercase;
-}
-.blog-text {
-  font-family: Comfortaa;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24.51px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  padding: 40px 0 23px;
+  color: rgba(109, 4, 220, 1);
 }
-.blog-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 47px;
+
+.toggle-button {
+  background: none;
+  border: none;
+  transform: rotate(180deg);
+  cursor: pointer;
 }
-.blog-img-one {
+
+.faq-answer {
   display: none;
+  padding-top: 8px;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.79px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 @media screen and (min-width: 1200px) {
-  .blog-img-one {
-    display: flex;
-    margin-top: -370px;
-    margin-left: 600px;
-    margin-bottom: -90px;
-  }
   .blog {
     margin: auto;
-    padding: 71px 200px 0;
+    padding: 60px 80px;
     width: 1440px;
-    height: 660px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url("/image/blog/Tadım\ ve\ Atölyeler\ \(1\).png");
-  }
-  .blog-title {
-    text-align: center;
-  }
-  .blog-title-text {
-    font-family: Comfortaa;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 57.6px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-
-    padding: 6px 0 22px;
-  }
-  .blog-img {
-    margin: auto;
   }
 
-  .blog__list {
+  .blog-img-one {
+    width: 500px;
+    height: 518px;
+
+    margin: 0px;
+  }
+  .blog-container {
     display: flex;
-    flex-direction: row;
+    align-items: start;
+    gap: 140px;
+    padding-top: 32px;
+  }
+  .faq-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 28px;
-    margin-top: 0px;
+    gap: 20px;
+    width: 640px;
   }
 
-  .blog-item {
-    width: 328px;
-    height: 307px;
-    border-radius: 50px;
-    background: #ffffff;
-
-    padding: 54px 20px 11px;
-  }
-  .blog-item-title {
-    font-family: Climate Crisis;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    text-transform: uppercase;
-  }
-  .blog-text {
-    font-family: Comfortaa;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    padding: 40px 0 23px;
-  }
-  .blog-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 47px;
+  .faq-item {
+    width: 640px;
   }
 }
 .packages {
   margin: auto;
   width: 375px;
-  height: 561px;
-  padding: 49px 16px 40px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/image/packages/Sipariş\ ve\ Teslimat.png");
+
+  padding: 40px 0px 40px 20px;
 }
-.packages-title {
-  font-family: Comfortaa;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  text-transform: uppercase;
-}
+
 .packages-text {
-  font-family: Comfortaa;
-  font-size: 20px;
+  font-family: Open Sans;
+  font-size: 22px;
   font-weight: 400;
-  line-height: 28px;
-  text-align: center;
+  line-height: 29.96px;
+  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  padding-top: 17px;
+
+  padding-top: 38px;
 }
 .packages-list {
-  padding-top: 46px;
-  padding-bottom: 30px;
+  padding-top: 22px;
 }
 .packages-item {
-  width: 227px;
-  height: 220px;
-  margin: 0 10px;
+  width: 240px;
+  height: 292px;
+  padding: 22px 18px 22px 18px;
+  margin: 0 7px;
 }
 .packages-avatar {
   margin: auto;
 }
 .packages-item-title {
-  font-family: Comfortaa;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 26.82px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  padding: 22px 0;
+  color: rgba(109, 4, 220, 1);
+
+  padding: 18px 0 12px;
 }
 .packages-item-text {
-  font-family: Comfortaa;
-  font-size: 16px;
+  font-family: Open Sans;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 24.51px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
 @media screen and (min-width: 1200px) {
   .packages {
+    margin: auto;
     width: 1440px;
-    height: 433px;
-    padding: 0px 330px 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url("/image/packages/Pacchetti\ e\ Abbonamenti.png");
+
+    padding: 60px 80px;
   }
-  .packages-title {
-    font-family: Comfortaa;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 57.6px;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
+
   .packages-text {
-    font-family: Comfortaa;
-    font-size: 20px;
+    font-family: Open Sans;
+    font-size: 22px;
     font-weight: 400;
-    line-height: 28px;
-    text-align: center;
+    line-height: 29.96px;
+    text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 
-    padding-top: 13px;
+    padding-top: 32px;
+  }
+  .packages-list {
+    padding-top: 28px;
+  }
+  .packages-item {
+    margin: 0 10px;
   }
 }
 .reviews {
   width: 375px;
-  padding: 54px 0px;
+  padding: 40px 20px;
   margin: auto;
 }
-.reviews-title {
-  padding: 0 16px;
-  font-family: Comfortaa;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  text-transform: uppercase;
-}
-.reviews-text {
-  font-family: Comfortaa;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 28px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  padding: 26px 16px 62px;
+.reviews-img-one {
+  width: 375px;
+  height: 255px;
+  margin-top: 28px;
+  margin-left: -20px;
 }
 .reviews__list {
-  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 22px;
 }
 
 .reviews-item {
-  width: 231px;
-  height: 290px;
-
-  margin: 0 10px;
+  margin: auto;
+  width: 240px;
+  height: 249px;
+  padding: 23px 16px 23px 16px;
 }
-
+.reviews-avatar {
+  margin: auto;
+}
 .reviews-item-title {
-  font-family: Comfortaa;
-  font-size: 24px;
+  font-family: Montserrat;
+  font-size: 22px;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 26.82px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  padding: 23px 0 34px;
+  color: rgba(109, 4, 220, 1);
+
+  padding: 20px 0 12px;
 }
 .reviews-item-text {
-  font-family: Comfortaa;
-  font-size: 16px;
+  font-family: Open Sans;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 24.51px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #505050;
 }
 @media screen and (min-width: 1200px) {
   .reviews {
     width: 1440px;
-    padding: 74px 22px;
+    padding: 60px 80px;
     margin: auto;
   }
-  .reviews-title {
-    padding: 0px;
-    font-family: Comfortaa;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 57.6px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+  .reviews-container {
+    display: flex;
+    gap: 140px;
+    padding-top: 32px;
   }
-  .reviews-text {
-    font-family: Comfortaa;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+  .reviews-img-one {
+    width: 640px;
+    height: 439px;
 
-    padding: 31px 0px 66px;
+    margin: 0;
   }
   .reviews__list {
-    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 22px;
   }
 
   .reviews-item {
-    width: 231px;
-    height: 290px;
+    margin: auto;
+    width: 240px;
+    height: 249px;
+    padding: 23px 16px 23px 16px;
+  }
+  .reviews-avatar {
+    margin: auto;
+  }
+  .reviews-item-title {
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26.82px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(109, 4, 220, 1);
 
-    margin: 0 40px;
+    padding: 20px 0 12px;
+  }
+  .reviews-item-text {
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.51px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
   }
 }
 
@@ -1223,109 +1074,90 @@ a {
   }
 }
 .footer {
-  padding: 0 20px 40px;
+  padding: 17px 54px;
+  background: rgba(109, 4, 220, 1);
 }
-.footer-container-top {
-  display: flex;
-  flex-direction: column;
 
-  align-items: center;
-  gap: 24px;
-  font-family: Comfortaa;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 28px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #000000;
-}
-.footer-adress {
-  color: #000000;
-  text-decoration: none;
-}
-.footer-img {
-  margin: auto;
-}
 .footer-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-
-  gap: 28px;
+  align-items: start;
+  width: 277px;
+  margin: auto;
+  gap: 22px;
 }
 .footer-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  gap: 27px;
+  align-items: start;
+  text-align: start;
+  gap: 12px;
 }
 .footer-text {
-  font-family: Comfortaa;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26.82px;
   text-align: left;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  text-transform: uppercase;
-  color: #ff4400;
+  text-decoration: none;
+  color: rgba(255, 244, 226, 1);
 
   text-align: center;
 }
 
 .footer-copyright {
-  font-family: Comfortaa;
-  font-size: 14px;
+  font-family: Open Sans;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 16.34px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+
+  color: rgba(255, 244, 226, 1);
 }
 
 @media screen and (min-width: 1200px) {
   .footer {
     width: 1440px;
     margin: auto;
-    padding: 0 29px 39px;
+    padding: 31px 188px;
   }
-  .footer-container-top {
-    display: none;
-  }
-
-  .footer-img {
-    display: none;
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    margin: auto;
+    gap: 36px;
   }
   .footer-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 240px;
+
+    gap: 160px;
     text-align: center;
   }
   .footer-text {
-    font-family: Comfortaa;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28px;
-    text-align: left;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26.82px;
+    text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
 
   .footer-copyright {
-    font-family: Comfortaa;
-    font-size: 14px;
+    font-family: Open Sans;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 16.34px;
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
@@ -1334,34 +1166,32 @@ a {
 .policy-terms-container {
   padding: 106px 15px 70px;
 }
-.policy-terms-text-title {
-  font-family: Comfortaa;
-  font-size: 20px;
+.policy-terms-container h1 {
+  font-family: Montserrat;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 43.88px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  text-transform: uppercase;
+  color: rgba(255, 76, 74, 1);
 }
 
 .policy-terms-container p {
-  font-family: Comfortaa;
-  font-size: 16px;
+  font-family: Open Sans;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 27px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-
-  padding-top: 20px;
 }
 
 .policy-terms-container h2 {
-  font-family: Comfortaa;
+  font-family: Open Sans;
   font-size: 18px;
-  font-weight: 400;
-  line-height: 24px;
+  font-weight: 700;
+  line-height: 27px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -1373,16 +1203,16 @@ a {
   list-style-type: disc;
 
   padding-left: 20px;
-  font-family: Comfortaa;
-  font-size: 16px;
+  font-family: Open Sans;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 27px;
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
 .policy-terms-container a {
-  color: #000;
+  color: rgba(29, 28, 28, 1);
   text-decoration: none;
 }
 
@@ -1390,11 +1220,11 @@ a {
   .policy-terms-container {
     padding: 116px 40px 112px;
   }
-  .policy-terms-text-title {
-    font-family: Comfortaa;
-    font-size: 24px;
+  .policy-terms-container h1 {
+    font-family: Montserrat;
+    font-size: 42px;
     font-weight: 700;
-    line-height: 32px;
+    line-height: 51.2px;
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
