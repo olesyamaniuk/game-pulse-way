@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 :root {
 }
@@ -114,7 +114,7 @@ a {
   width: 100%;
   z-index: 5;
 
-  background: rgba(25, 25, 25, 0.6);
+  background: transparent;
 }
 .header__background {
   position: absolute;
@@ -126,7 +126,8 @@ a {
   z-index: -1;
   -webkit-transition: left 0.3s ease;
   transition: left 0.3s ease;
-  background: #161a17;
+  background: rgba(255, 244, 226, 1);
+  box-shadow: 0px 10px 15px 0px rgba(25, 25, 25, 0.1);
 }
 .header.is-open .header__background {
   left: 0;
@@ -144,7 +145,6 @@ a {
   display: flex;
   background-color: transparent;
   border: none;
-  border-radius: 50%;
 }
 
 .header__icon--menu {
@@ -171,7 +171,7 @@ a {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-
+  padding: 20px;
   position: relative;
 }
 
@@ -187,7 +187,7 @@ a {
   -ms-flex-align: start;
   align-items: start;
   gap: 28px;
-  padding: 0px 40px;
+  padding: 34px 50px;
   top: 130px;
   position: absolute;
   top: 100%;
@@ -198,7 +198,7 @@ a {
   transition: 0.3s;
   z-index: 999;
 
-  background: #161a17;
+  backdrop-filter: blur(12px);
 }
 .navigation__list.is-open {
   right: 0;
@@ -207,33 +207,22 @@ a {
   position: relative;
   text-decoration: none;
   transition: all 0.1s ease;
-  font-family: Comfortaa;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 26px;
-  text-align: center;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21.79px;
+  text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  text-transform: uppercase;
-  color: #ffffff;
+
+  color: rgba(29, 28, 28, 1);
 }
 
 .navigation__link:hover,
 .navigation__link:focus {
-  color: #ff4400;
+  color: rgba(255, 76, 74, 1);
 }
-.header__icon-home-img {
-  font-family: Comfortaa;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 28px;
-  text-align: left;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  color: #ff4400;
-}
+
 .header.is-open {
   background-color: transparent;
 }
@@ -275,7 +264,7 @@ a {
     width: auto;
     padding-block: 0;
     flex: 1;
-    gap: 30px;
+    gap: 85px;
     height: 0px;
     display: flex;
     justify-content: center;
@@ -283,11 +272,11 @@ a {
     padding-left: 109px;
   }
   .navigation__link {
-    font-family: Comfortaa;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 26px;
-    text-align: center;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
   }
@@ -387,7 +376,7 @@ a {
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-
+    width: 500px;
     padding: 36px 0 62px;
   }
 }
@@ -582,52 +571,144 @@ a {
   width: 335px;
   height: 396px;
   padding: 20px;
-
+  margin: 0 6px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 1);
 }
-
+.gallery-title-button {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.07px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  width: 295px;
+  height: 63px;
+  padding: 22px 0px;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 76, 74, 1);
+  background: #fff4e2;
+}
+.gallery-desk {
+  display: none;
+}
 @media screen and (min-width: 1200px) {
+  .gallery-phone {
+    display: none;
+  }
+  .gallery-desk {
+    display: flex;
+  }
   .gallery {
-    margin: auto;
-    padding: 64px 16px 135px 16px;
+    padding: 60px 80px;
     width: 1440px;
   }
-
+  .gallery-container {
+    display: flex;
+    justify-content: space-between;
+  }
   .gallery-title-text {
-    font-family: Comfortaa;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 57.6px;
+    font-family: Open Sans;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 29.96px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-  }
-  .gallery-container-text {
-    padding-top: 30px;
-    padding-bottom: 34px;
-  }
 
-  .gallery__item-nine {
+    padding-top: 28px;
+  }
+  .gallery-title-button-top {
     display: flex;
-    width: 698px;
-    height: 84px;
     align-items: center;
     justify-content: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url("/image/gallery/Rectangle\ 24.png");
-    font-family: Climate Crisis;
-    font-size: 20px;
+    font-family: Open Sans;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 24.51px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 400px;
+    height: 69px;
+    padding: 22px 0px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 76, 74, 1);
+    background: #fff4e2;
+  }
+  .gallery-item-title {
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26.82px;
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-top: 60px;
+  }
+  .gallery-item-text {
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.51px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .gallery-item-text-bold {
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24.51px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 32px;
+  }
+  .gallery__item {
+    width: 760px;
+    height: 427px;
+    padding: 20px;
+
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 1);
+  }
+  .gallery__item-two {
+    width: 500px;
+    height: 427px;
+    padding: 20px;
+
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 1);
+  }
+  .gallery-img {
+    overflow: hidden;
+    position: relative;
+    width: 560px;
+    height: 269px;
+    margin: auto;
+  }
+  .gallery-img-two {
+    overflow: hidden;
+    position: relative;
+    width: 388px;
+    height: 264px;
+    margin: auto;
+  }
+  .gallery-img img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .gallery-title-button {
+    display: none;
   }
 }
 .blog {
@@ -903,143 +984,10 @@ a {
   }
 }
 
-.testimonials {
-  width: 375px;
-  padding: 0px 16px;
-  margin: auto;
-}
-.testimonials-title {
-  font-family: Comfortaa;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 57.6px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  text-transform: uppercase;
-}
-.testimonials-text {
-  padding: 13px 0 68px;
-  font-family: Comfortaa;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 22px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
-.testimonials-list {
-  padding-top: 8px;
-}
-.testimonials-item {
-  width: 279px;
-  height: 366px;
-  margin: 0 12px;
-}
-.testimonials-item-img {
-  margin-left: 79px;
-}
-.testimonials-item-text {
-  font-family: Comfortaa;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 22px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
-.testimonials-item-text-span {
-  font-family: Climate Crisis;
-  font-size: 64px;
-  font-weight: 400;
-  line-height: 22px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-}
-.testimonials-img {
-  display: none;
-}
-@media screen and (min-width: 1200px) {
-  .testimonials {
-    width: 1440px;
-    padding: 60px 0px 0 23px;
-    margin: auto;
-    display: flex;
-    gap: 46px;
-  }
-  .testimonials-title {
-    font-family: Comfortaa;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 57.6px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
-  .testimonials-text {
-    padding: 13px 0 68px;
-    font-family: Comfortaa;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
-  .testimonials-list {
-    padding-top: 8px;
-    width: 1014px;
-  }
-  .testimonials-item {
-    width: 279px;
-    height: 366px;
-    margin: 0 12px;
-  }
-  .testimonials-item-img {
-    margin-left: 79px;
-  }
-  .testimonials-item-text {
-    padding-top: 33px;
-    font-family: Comfortaa;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 22px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
-  .testimonials-item-text-span {
-    font-family: Climate Crisis;
-    font-size: 64px;
-    font-weight: 400;
-    line-height: 22px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
-  .testimonials-img {
-    display: flex;
-  }
-}
 .contact {
-  padding: 42px 16px;
+  padding: 60px 80px;
   width: 375px;
   margin: auto;
-}
-.contact-title {
-  font-family: Comfortaa;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 57.6px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
-  text-transform: uppercase;
-}
-
-.contact-adress {
-  display: none;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1047,30 +995,6 @@ a {
     padding: 76px 32px;
     width: 1440px;
     margin: auto;
-  }
-  .contact-title {
-    font-family: Comfortaa;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 57.6px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
-
-  .contact-adress {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: end;
-    gap: 24px;
-    font-family: Comfortaa;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 28px;
-    text-align: right;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
   }
 }
 .footer {
@@ -1236,10 +1160,8 @@ a {
   bottom: 10px;
   width: 375px;
 
-  padding: 20px;
-  background: rgba(13, 92, 9, 0.9);
-
-  box-shadow: 10px 10px 10px 0px #0000002e;
+  padding: 38px 16px;
+  background: rgba(255, 244, 226, 1);
 
   text-align: center;
   z-index: 1000;
@@ -1248,15 +1170,15 @@ a {
 }
 
 .cookie-popup-text-two {
-  font-family: Comfortaa;
+  font-family: Open Sans;
   font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
+  font-weight: 400;
+  line-height: 27px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 
-  color: #ffffff;
+  color: rgba(23, 28, 33, 1);
 }
 .cookie-button-container {
   padding: 48px 0 0;
@@ -1269,28 +1191,20 @@ a {
 }
 .cookie-button {
   border: none;
-  border-radius: 5px;
-  font-family: Comfortaa;
+  font-family: PT Serif;
   font-size: 18px;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 23.85px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  text-transform: uppercase;
-  width: 258px;
+
+  width: 342px;
   height: 74px;
-
   border-radius: 50px;
-  background: rgba(255, 68, 0, 1);
-
-  padding: 24px 0px;
-
-  color: #000;
-}
-
-#accept-cookies {
-  background: rgba(13, 255, 0, 1);
+  background: rgba(109, 4, 220, 1);
+  border: none;
+  color: rgba(255, 244, 226, 1);
 }
 
 .close-popup {
@@ -1302,11 +1216,11 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .cookie-popup-text-two {
-    font-family: Comfortaa;
+    font-family: PT Serif;
     font-size: 18px;
     font-weight: 700;
-    line-height: 26px;
-    text-align: left;
+    line-height: 23.85px;
+    text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 
@@ -1329,5 +1243,7 @@ a {
 
   .cookie-popup-container {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
